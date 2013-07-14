@@ -52,9 +52,9 @@ import org.spoutcraft.launcher.technic.CustomInfo;
 import org.spoutcraft.launcher.technic.RestInfo;
 
 public class RestAPI {
-	private static final String DEFAULT_MIRROR = "http://mirror.technicpack.net/Technic/";
+	private static final String DEFAULT_MIRROR = "http://dl.nairo.eu/";
 	private static final ObjectMapper mapper = new ObjectMapper();
-	private static final String PLATFORM = "http://www.technicpack.net/";
+	private static final String PLATFORM = "http://technic.nairo.eu/";
 
 	private static FullModpacks DEFAULT;
 	private static RestAPI TECHNIC;
@@ -193,7 +193,7 @@ public class RestAPI {
 
 	public static RestAPI getDefault() {
 		if (TECHNIC == null) {
-			TECHNIC = new RestAPI("http://solder.technicpack.net/api/");
+			TECHNIC = new RestAPI("http://technic.nairo.eu/api/");
 			setupDefault();
 		}
 
